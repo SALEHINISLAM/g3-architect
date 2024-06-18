@@ -68,10 +68,37 @@ header h3{
 .btn:hover{
     background-color: #727272;
 }
-/* .prof{
-    border: 2px solid tomato;
-    width: 100%;
-} */
+
 .prof>img{
     width: 100%;
+    border-radius: 0.5rem;
+}
+.cls1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+}
+.cls1-img{
+    border: 2px solid tomato;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* gap: 0.1rem; */
+    /* justify-content: end; */
+    align-items: end;
+    text-align: end;
+}
+.cls1-cap>h3{
+    font-size: 2.813rem;
+}
+.cls1-cap>p{
+    font-size: 1rem;
+    color: #727272;
+}
+
+
+@media screen and(max-width:576px) {
+    nav{
+        flex-direction: column;
+    }
 }

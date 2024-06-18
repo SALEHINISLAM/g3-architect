@@ -2,18 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     font-family: "Work Sans", sans-serif;
+    font-family: "Lato",sans-serif;
 }
 /* header styles */
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 header{
     background-color: #ff8f0e2b;
     color: #131313;
     padding: 25px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
-header>nav{
-    display: flex;
-    justify-content: space-between;
+.des{
+    grid-area: des;
+}
+.title{
+    grid-area: title;
+}
+nav{
+    display: grid;
+    grid-template-areas: 
+    "title  des"
+    ;
 }
 header ul{
     list-style-type: none;
@@ -64,11 +80,15 @@ header h3{
     font-weight: bold;
     border:none;
     margin: 0.5rem;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: #727272;
 }
-
+.prof{
+    border: 2px solid tomato;
+    width: 100%;
+}
 .prof>img{
     width: 100%;
     border-radius: 0.5rem;
@@ -85,8 +105,7 @@ header h3{
     grid-template-rows: repeat(2,1fr);
     /* gap: 0.1rem; */
     /* justify-content: end; */
-    align-items: end;
-    text-align: end;
+    align-items: center;
 }
 .cls1-cap>h3{
     font-size: 2.813rem;
@@ -95,10 +114,34 @@ header h3{
     font-size: 1rem;
     color: #727272;
 }
+.cls1-img>img{
+    width: 50%;
+    height: 50%;
+}
 
-
-@media screen and(max-width:576px) {
+/* mobile */
+@media screen and (max-width:992px) {
+    body{
+        align-items: center;
+    }
+    header{
+        padding: .1rem;
+    }
+    .title{
+        text-align: center;
+        grid-area: title;
+    }
+    .des{
+        grid-area: des;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding: 1px;
+        align-items: center;
+    }
     nav{
-        flex-direction: column;
+        display: grid;
+        grid-template-areas: "title" "des";
     }
 }

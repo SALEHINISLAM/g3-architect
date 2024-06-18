@@ -1,2 +1,77 @@
 /* Work sans */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Work Sans", sans-serif;
+}
+/* header styles */
+header{
+    background-color: #ff8f0e2b;
+    color: #131313;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+header>nav{
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1rem; */
+}
+header a{
+    text-decoration: none;
+    color: #131313;
+}
+nav li{
+    margin-right: 2rem;
+    font-size:1.125rem;
+}
+header h3{
+    font-size: 2.813rem;
+    font-weight: bold;
+}
+/* banner */
+.cap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.cap>h2{
+    color: #131313;
+    font-weight: bold;
+    font-size: 4rem ;
+}
+.cap>p{
+    font-size: 1rem;
+    color: #727272;
+}
+/* primary btn */
+.btn{
+    background-color: #FF900E;
+    color: white;
+    border-radius: 0.5rem;
+    width: 11.25rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border:none;
+    margin: 0.5rem;
+}
+.btn:hover{
+    background-color: #727272;
+}
+/* .prof{
+    border: 2px solid tomato;
+    width: 100%;
+} */
+.prof>img{
+    width: 100%;
+}
